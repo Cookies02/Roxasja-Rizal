@@ -1,0 +1,183 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Creative Developer</title>
+    <link rel="stylesheet" href="{% static 'Projects/styles.css' %}">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="{% static 'Projects/assets/Portfolio.ico' %}" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">PORTFOLIO.</a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#course">Course</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a
+                        href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKhbsLJvbxZWsPHhrFZHdFlpbCvzgCxXXZvscGtFdBnfXrQZBdXkKMzmSnRrJVpvkzQQNNs">Feedback</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero section">
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <span class="reveal">Roxas' Portfolio.</span>
+
+            <h1>
+                A Digital Archive:<br>
+                <span class="accent">Course Projects</span>
+            </h1>
+
+            <p>
+                A partial requirement for the subject of Life and Works of Jose Rizal
+            </p>
+
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About Course Section -->
+    <section id="course" class="course-section section">
+
+        <div class="course-bg"></div>
+
+        <div class="course-content">
+
+            <span class="course-label">About the Course</span>
+
+            <h2>
+                Life and Works of
+                <span class="accent">Jose Rizal</span>
+            </h2>
+
+            <p>
+                This course explores the life, works, ideas, and contributions
+                of Dr. Jose Rizal. It examines his writings, experiences,
+                and historical context, while highlighting his influence
+                on Philippine society and the development of Filipino
+                national consciousness.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="section-header">
+            <h2>Selected Projects</h2>
+            <p>A collection of my recent work and activities.</p>
+        </div>
+
+        <div class="project-grid">
+            <!-- Project 1 (Your Folder) -->
+            <a href="{% url 'activity_1' %}" class="project-card">
+                <div class="project-img">
+                    <!-- Link to an image in your assets folder if you have one -->
+                    <img src="{% static 'Projects/assets/Activity_1.jpg' %}" alt="Activity 1">
+                </div>
+                <div class="project-info">
+                    <span class="category">Activity</span>
+                    <h3>Activity 1</h3>
+                    <p>Interactive web component built with HTML, CSS, and JS.</p>
+                </div>
+            </a>
+
+            <!-- Placeholder Project 2 -->
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80"
+                        alt="Future Project">
+                </div>
+                <div class="project-info">
+                    <span class="category">Development</span>
+                    <h3>Coming Soon</h3>
+                    <p>A new exciting project is currently in development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+
+        <div class="about-bg"></div>
+
+        <div class="about-container">
+
+            <div class="about-image">
+                <img src="{% static 'Projects/assets/About.jpeg' %}" alt="A photo of me">
+            </div>
+
+            <div class="about-heading">
+                <h2>About Me</h2>
+            </div>
+
+            <div class="about-card">
+                <p>
+                    This developer has embarked on an exciting journey by creating the "Portfolio," a dedicated website
+                    designed to showcase both completed projects and ambitious future endeavors. This platform serves as
+                    a vibrant portfolio, reflecting the user's creativity and technical skills while providing a
+                    transparent look at the project's evolution.
+                </p>
+
+                <div class="skills">
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">UI/UX</span>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: roxasaldest02@gmail.com</p>
+                <p>Phone: +63 9163391213</p>
+            </div>
+            <div class="footer-section">
+                <h3>Terms and Conditions</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter for updates.</p>
+                <form>
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <p>&copy; <span id="displayYear"></span> All Rights Reserved by Roxas.</p>
+    </footer>
+
+    <script src="{% static 'Projects/scripts.js' %}"></script>
+</body>
+
+</html>
