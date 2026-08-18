@@ -98,7 +98,7 @@ body {
     padding-top: 80px;
 
     /* Your University of Batangas photo */
-    background-image: url("Assets/UBLC-scaled.jpg");
+    background-image: url("assets/UBLC-scaled.jpg");
     background-size: 75% 100%;
     background-position: right center;
     background-repeat: no-repeat;
@@ -256,7 +256,7 @@ body {
     width: 70%;
     height: 100%;
 
-    background-image: url("Assets/jose-rizal.jpg");
+    background-image: url("assets/jose-rizal.jpg");
     background-size: cover;
     background-position: center;
 
